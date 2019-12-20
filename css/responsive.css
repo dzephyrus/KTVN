@@ -4,7 +4,13 @@
 @media (max-width: 768px) {
 	body{
 		position: relative;
-		background: #F5F5F5;
+		background-color: white;
+	}
+	.detail-title{
+		text-align:left;
+	}
+	.table-image-title{
+		background: #F7F7F7;
 	}
 	.bottom-header{
 		background: #993333;
@@ -199,7 +205,11 @@
 		font-size: 22px;
 	}
 	.detail-header-right{
-		display: none;
+		display: block;
+	}
+	.detail-header{
+		display: flex;
+		flex-wrap: wrap;
 	}
 	.box-home .box-home-main{
 		width: 100%;
@@ -223,7 +233,7 @@
 		width: 100%;
 		display: block;
 		flex-wrap: wrap;
-		width: 100%;
+		
 	}
 	.news-left-item .news-left-item-content{
 		font-family: Arial;
@@ -399,9 +409,16 @@ color: #333333;
 		width: 100%;
 		margin-left: 10px;
 	}
-	.news-home-item .news-info h4 a{
+	.news-home-item .news-info h4{
 		display: block;
-		margin-top: -15px;
+		font-size: 16px;
+		margin-top: -12px;
+	}
+	.news-home-item .news-info .news-cate-time{
+		display: none;
+	}
+	.banner-mid{
+		display: none;
 	}
 	.main-footer{
 		width:100%;
@@ -432,9 +449,16 @@ color: #333333;
 	.box-home-main-item {
 		margin-bottom: 0px;
 	}
-	
+	.detail-action{
+		border-bottom: none;
+	}
 	.detail-intro {
 		font-size: 20px;
+	}
+	.relation-news-header{
+		margin-bottom: 16px;
+		padding-left: 0px;
+		background: #F7F7F7;
 	}
 	.main-title-super{
 		font-size: 30px;
@@ -581,6 +605,13 @@ color: #333333;
 		height: auto;
 		margin-bottom: 10px;
 	}
+	.tag-list{
+		display: flex;
+		flex-wrap:wrap;
+	}
+	.tag-list a{
+		padding-right: 10px;
+	}
 	
 	/* cate TV */
 	.list-news-video .news-item-video .thumb{
@@ -657,6 +688,7 @@ color: #333333;
 	.box-home-author .box-home-main-item .news-info{
 		width: 80%;
 		padding-bottom: 10px;
+		
 	}
 	.compact{
 		margin-top: 10px;
@@ -665,6 +697,10 @@ color: #333333;
 		margin:0px;
 		padding-right: 10px;
 		padding-top: 5px;
+	}
+	.banner-res{
+		display: block;
+		padding: 30px;
 	}
 	/* tag */
 	.category-header-tag {
@@ -781,6 +817,13 @@ color: #333333;
 	.home-logo img{
 		width: auto;
 	}
+	.detail-header-action{
+		display: none;
+	}
+	.detail-header{
+		display: inline-block;
+		fw
+	}
 	.menu-cate{
 		display: none;
 	}
@@ -848,7 +891,7 @@ color: #333333;
 		max-width: 100%;
 		padding-top:0px;
 		padding-bottom: 0px;
-		background-color: #F5F5F5;
+		background-color: white;
 	}
 	.box-home-main .thumb{
 		height: auto;
@@ -857,13 +900,16 @@ color: #333333;
 		width: 100%;
 	}
 	.box-page-first-right{
-		display: none;
+		display: inline-block;
+		width: 30%;
+		
 	}
 	.time{
 		display: none;
 	}
 	.news-home-item .news-info .main-intro{
 		text-align: justify;
+		
 	}
 	.box-home-video{
 		width: 100%;
@@ -872,7 +918,7 @@ color: #333333;
 		
 	}
 	.box-home-right{
-		width: 25%;
+		width: 100%;
 	}
 	.box-home-right h3{
 		font-size: 15px;
@@ -908,7 +954,7 @@ color: #333333;
 		position: relative;
 	}
 	.news-home-item{
-		display: block;
+		display: flex;
 	}
 	.list-news-home .news-home-item .thumb {
 		width: 100%;
@@ -929,6 +975,12 @@ color: #333333;
 	}
 	.news-home-item .news-info{
 		width: 100%;
+	}
+	.news-home-item .news-info h4{
+		font-size: 20px;
+	}
+	.news-home-item .news-info .main-intro{
+		font-size: 15px;
 	}
 	.main-footer{
 		width:100%;
@@ -951,6 +1003,8 @@ color: #333333;
 	}
 	.detail-body {
 		display: flex;
+		width: 100%;
+		justify-content: space-between;
 	}
 	.content p{
 		font-size: 20px;
@@ -986,12 +1040,12 @@ color: #333333;
 		font-family: Arial;
 font-style: normal;
 font-weight: normal;
-font-size: 14px;
+font-size: 24px;
 line-height: 16px;
-
+font-weight: 500;
 /* KTVN2 */
 
-color: #000000;
+color: #993333;
 
 	}
 	.main-adv{
@@ -1043,7 +1097,7 @@ color: #000000;
 		margin-right: 15px;
 	}
 	.detail-body-left{
-		width: 100%;
+		width: 70%;
 	}
 	.tag-list{
 		margin-left: 0px;
@@ -1055,7 +1109,17 @@ color: #000000;
 		width: 100%;
 		padding-top: 20px;
 	}
-	
+	.main-news-left{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.news-left-item-info{
+		padding: 0 15px;
+	}
+	.news-left-image img{
+		border-radius: 7px;
+	}
 	
 	/* category */
 	.box-home-cate .box-home-right{
@@ -1098,6 +1162,11 @@ color: #000000;
 	}
 	.news-left-item{
 		display: inline-block;
+		width: 48%;
+		border-bottom: none;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+		border-radius: 7px;
+		background: #FFFFFF;
 	}
 	.news-left-image{
 		height: 100%;
@@ -1113,5 +1182,8 @@ color: #000000;
 	}
 	.icon-nav i{
 		font-size: 30px;
+	}
+	.main-footer{
+		padding: 10px 15px;
 	}
 }
