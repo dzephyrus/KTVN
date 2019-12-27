@@ -5,7 +5,8 @@
 	body{
 		position: relative;
 		background-color: white;
-		margin-bottom: 0xp
+		margin-bottom: 0;
+		
 	}
 	.detail-title{
 		text-align:left;
@@ -44,7 +45,7 @@
 		background-color:  #993333;
 	}
 	.logo{
-		z-index: 12;
+		z-index: 5;
 		padding-left: 35px
 	}
 	.main-menu-search{
@@ -52,7 +53,8 @@
 		display: block;
 	}
 	.menu-action{
-		display: none;
+		display: block;
+		z-index: 9;
 	}
 	
 	.home-logo{
@@ -794,7 +796,7 @@ color: #333333;
 	.right-cate{
 		width: 100%;
 		padding-bottom: 20px;
-		
+		margin: 0px;
 	}
 	.news-table-bot-image{
 		width: 100%;
@@ -818,6 +820,35 @@ color: #333333;
 	}
 	.cate-number{
 		display: none;
+	}
+	.container1 {
+	  position: absolute;
+	background-color:#993333;
+	  transform: translate(-100%);
+		z-index: 19;
+	}
+	
+	.search-box input[type="text"] + span {
+	  z-index: -1;
+	  position: absolute;
+	  border: 2px solid white;
+	  top: 0;
+	  width: 21px;
+	  height: 21px;
+	  transition: all .25s ease-in .25s;
+	  border-radius: 25px;
+	  left: 0;
+	}
+	.search-box input[type="text"] + span::before {
+	  transition: all .25s ease-in .5s;
+	  transform-origin: left top;
+	  content: '';
+	  position: absolute;
+	  width: 10px;
+	  height: 5px;
+	  border-radius: 5px;
+	  background: white;
+	  transform: rotate(45deg) translate(21px, -1px);
 	}
 	.footer{
 		display: none!important;
@@ -898,6 +929,7 @@ color: #333333;
 	.footer-r_bot img{
 		width: 30%;
 	}
+	
 	
 }
 @media (min-width: 768px) and (max-width: 1200px) {
