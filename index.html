@@ -40,49 +40,15 @@
 			</div>
 		</div>
 		<div class="bottom-header">
-			<div class="container">
-				<div class="main-menu">
-					
-					<div>
-						<nav class="navbar navbar-light p-0 nav-r">
-						  <button class="navbar-toggler border-0 navbar-dark button-r" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon icon-nav" style="width: 25px;"><img src="images/icon/Hamburger.png" alt=""><i class="fa fa-bars" aria-hidden="true"></i></span>
-						  </button>
-						  <div class="collapse navbar-collapse list-r" id="navbarNav">
-							<ul class="navbar-nav">
-							  <li class="nav-item active">
-								<a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link text-light" href="#">NGÂN HÀNG</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link text-light" href="#">DOANH NHÂN</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link text-light" href="#">TIÊU DÙNG</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link text-light" href="#">SÀN GIAO DỊCH</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link text-light" href="#">BUSINESS STYLE</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link text-light" href="#">BÁCH KHOA KINH TẾ</a>
-							  </li>
-								
-							</ul>
-						  </div>
-						</nav>
-					</div>
-					
-					<div class="logo">
-					<a href="/" title="Nông nghiệp Việt Nam" class="thumb home-logo"><img src="images/icon/Logo_KinhTeVietNam 1.png" alt=""></a>
-					<a href="/" title="Nông nghiệp Việt Nam" class="thumb home-logo-r"><img src="images/Logo_KinhTeVietNam 3.png" alt=""></a>	
-					<a href="" class="name-logo">KINH TẾ VIỆT NAM</a>
-					</div>
-					
+			<div class="container" >
+				<div class="main-menu" >
+					<button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+<div class="logo">
+		  <a href="/" title="Nông nghiệp Việt Nam" class="thumb home-logo"><img src="images/Artboard 2.png" alt=""></a>
+					<a href="/" title="Nông nghiệp Việt Nam" class="thumb home-logo-r"><img src="images/Artboard 1.png" alt=""></a>
+		  </div>
 					
 					<ul class="menu-cate">
 						<li class="menu-cate-1 home">
@@ -98,18 +64,14 @@
 						<li class="menu-cate-1">
 							<a href="/" title="">Địa ốc</a>
 						</li>
-						<li class="menu-cate-1">
-							<a href="/" title="">doanh nhân</a>
-						</li>
+						
 						<li class="menu-cate-1">
 							<a href="/" title="">tiêu dùng</a>
 						</li>
 						<li class="menu-cate-1">
 							<a href="/" title="">sàn giao dịch</a>
 						</li>
-						<li class="menu-cate-1">
-							<a href="/" title="">business style</a>
-						</li>
+						<li class="menu-cate-1"> <a href="/">life style</a> </li>
 						<li class="menu-cate-1">
 							<a href="/" title="">bách khoa kinh tế</a>
 						</li>
@@ -119,24 +81,68 @@
 						<!--<a href="javascipt:void(0)" class="bars"><i class="fa fa-bars" aria-hidden="true"></i></a>-->
 						<div class="menu-action">
 						<!--<a href="javascipt:void(0)" class="bars"><i class="fa fa-bars" aria-hidden="true"></i></a>-->
-<!--
-						<div class="menu-search"><a href="javascipt:void(0)"><em class="fa fa-search" aria-hidden="true"></em></a>
-							<div class="search-bar">
-									<input class="search_input" type="text" placeholder="search">
-									<button class="btn btn-success"><em class="fa fa-search" aria-hidden="true"></em></button>
-						  </div>
-						</div>
--->
 						<div class="container1">
 							<div class="search-box">
-								<input type="text" />
+							  <input type="text"/>
 								<span></span>
 							</div>
 						</div>
-							
-					</div>
-					
+				  </div>
+					<div class="overlay"></div>
+				 
 				</div>
+				<nav id="sidebar">
+					   <!-- <div id="dismiss">
+							<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						</div>-->
+
+						<ul class="list-unstyled components ">
+
+							<li class="active"><a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex justify-content-between">NGÂN HÀNG<em class="fa fa-chevron-down" aria-hidden="true"></em></a>
+							  <ul class="collapse list-unstyled sidebar-submenu" id="homeSubmenu">
+									<li class="sidebar-submenu_item">
+										<a href="#">Home 1</a>
+									</li>
+									<li>
+										<a href="#">Home 2</a>
+									</li>
+									<li>
+										<a href="#">Home 3</a>
+									</li>
+							  </ul>
+							</li>
+							<li>
+								<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex justify-content-between">ĐỊA ỐC <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+								<ul class="collapse list-unstyled" id="pageSubmenu">
+									<li>
+										<a href="#">Page 1</a>
+									</li>
+									<li>
+										<a href="#">Page 2</a>
+									</li>
+									<li>
+										<a href="#">Page 3</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-between">DOANH NHÂN</a>
+
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-between">TIÊU DÙNG</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-between">SÀN GIAO DỊCH</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-between">BUSINESS STYLE</a>
+							</li>
+							<li>
+								<a href="#" class="d-flex justify-content-between">BÁCH KHOA KINH TẾ</a>
+							</li>
+						</ul>
+				  </nav>
 			</div>
 		</div>
 	</header>
@@ -300,15 +306,15 @@
 			<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<h4><a href="" class="news-left-item-title">Tuyến đường sắt qua Hồ Gươm vay ODA 30.572 tỷ đồng</a></h4>
-							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
+							<a href="" class=" news-left-item-time">Thời sự</a> <i class="fa fa-circle" aria-hidden="true"></i> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span>  
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
 			</div>
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -316,7 +322,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<h4><a href="" class="news-left-item-title">Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -324,7 +330,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -332,7 +338,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -340,7 +346,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -348,7 +354,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -368,7 +374,7 @@
 							</div>-->
 						<div>
 							<a href=""><img src="images/image 60.png" alt=""></a>
-								<a href="" class="cate-title">Tin theo ngành hàng</a>
+								<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 							<div class="right-cate">
 								<div class="w-100 d-flex flex-wrap border-bottom">
 								<div class="right-cate-detail">
@@ -492,7 +498,7 @@
 					<div class=" justify-content-between news-left-item  pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p>Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -500,7 +506,7 @@
 					<div class=" justify-content-between news-left-item  pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -508,7 +514,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -516,7 +522,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -524,7 +530,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -532,7 +538,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -540,7 +546,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -548,25 +554,25 @@
 					</div>
 							<!-----------------------------------hiển thị khi responsive------------------------------------------>
 							<div class="second-news">
-							<a href="" class="cate-title">Tin theo ngành hàng</a>
+							<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 							<div class=>
 								<div class="news-right2 d-flex justify-content-between border-bottom">
 									<img src="images/icon/Vector.png" class="news-right2-image" alt="" >
-									<h4><a href="">
-									Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng 
-									</a> </h4>
+									<a href="">
+									<h4>Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng </h4>
+									</a> 
 								</div>
 								<div class="news-right2 d-flex justify-content-between border-bottom">
 									<img src="images/icon/Vector.png" class="news-right2-image" alt="" >
-									<h4><a href="">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></h4>
+									<a href=""><h4>Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</h4></a> 
 								</div>
 								<div class="news-right2 d-flex justify-content-between border-bottom">
 									<img src="images/icon/Vector.png" class="news-right2-image" alt="" >
-									<h4><a href="">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></h4>
+									<a href=""><h4>Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</h4></a>  
 								</div>
 								<div class="news-right2 d-flex justify-content-between">
 									<img src="images/icon/Vector.png" class="news-right2-image" alt="" >
-									<h4><a href="">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></h4>  
+									<a href=""><h4>Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</h4></a>  
 								</div>
 							</div>
 						  </div>
@@ -587,18 +593,18 @@
 			<!-- adv -->		</div>
 		<div class="black-news d-flex flex-column ">
 			<div class="green-nav d-flex container">
-				<h1>MULTIMEDIA</h1>
+				<h1 class="green-nav_title">MULTIMEDIA</h1>
 					<a href="" class="green-nav-item">Video</a>
 					<a href="">Ảnh</a>
 					<a href="">Magazine</a>
 			</div>
 			
 			<div class="main-video d-flex justify-content-between">
-				<div class="main-video-content embed-responsive embed-responsive-16by9">
-							<iframe src="https://www.youtube.com/embed/hs9wP2PXk3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="main-video-content">
+							<img src="images/news_15.png" alt="">
 						</div>
 				<div class="main-video-title">
-					<a href="">Lễ ăn hỏi náo động đường phố của Đông Nhi - Ông Cao Thắng</a>
+					<h1 class="black-news_video_title"><a href="">Lễ ăn hỏi náo động đường phố của Đông Nhi - Ông Cao Thắng</a></h1>
 					<p class="video-content">Sáng 8/11, Đông Nhi và Ông Cao Thắng tổ chức lễ ăn hỏi tại nhà riêng ở quận 7 (TP.HCM). Rất đông người hâm mộ đã có mặt để chúc mừng.</p> 
 					<div class="main-video-status w-100 d-flex">
 						<p class=" main-video-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 23 phút trước</p>
@@ -618,10 +624,11 @@
 			<div class="list-video d-flex justify-content-between container">
 				<div class="list-video-item ">
 					
-					<div class="item_video embed-responsive embed-responsive-16by9 ">
-						<iframe src="https://www.youtube.com/embed/_ldbsgDNnsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="item_video ">
+						<img src="images/Rectangl 63.png" alt="">
+						<p class="item_video_time">1:23</p>
 					</div>
-					<a href="" class=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a>
+					<h4  class="list-video-item_title "><a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a></h4>
 					<div class="main-video-status">
 						<p class=" main-video-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 23 phút trước</p>
 						<p class=" main-video-time"><i class="fa fa-commenting-o" aria-hidden="true"></i> 12</p>
@@ -632,7 +639,7 @@
 					<div class="item_video embed-responsive embed-responsive-16by9">
 						<iframe src="https://www.youtube.com/embed/_ldbsgDNnsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a>
+					<h4  class="list-video-item_title "><a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a></h4>
 					<div class="main-video-status">
 						<p class=" main-video-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 23 phút trước</p>
 						<p class=" main-video-time"><i class="fa fa-commenting-o" aria-hidden="true"></i> 12</p>
@@ -642,7 +649,7 @@
 					<div class="item_video embed-responsive embed-responsive-16by9">
 						<iframe src="https://www.youtube.com/embed/_ldbsgDNnsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a>
+					<h4  class="list-video-item_title "><a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a></h4>
 					<div class="main-video-status">
 						<p class=" main-video-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 23 phút trước</p>
 						<p class=" main-video-time"><i class="fa fa-commenting-o" aria-hidden="true"></i> 12</p>
@@ -652,7 +659,7 @@
 					<div class="item_video embed-responsive embed-responsive-16by9">
 						<iframe src="https://www.youtube.com/embed/_ldbsgDNnsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a>
+					<h4  class="list-video-item_title "><a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a></h4>
 					<div class="main-video-status">
 						<p class=" main-video-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 23 phút trước</p>
 						<p class=" main-video-time"><i class="fa fa-commenting-o" aria-hidden="true"></i> 12</p>
@@ -662,7 +669,7 @@
 					<div class="item_video embed-responsive embed-responsive-16by9">
 						<iframe src="https://www.youtube.com/embed/_ldbsgDNnsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a>
+					<h4  class="list-video-item_title "><a href=""> Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30 </a></h4>
 					<div class="main-video-status">
 						<p class=" main-video-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 23 phút trước</p>
 						<p class=" main-video-time"><i class="fa fa-commenting-o" aria-hidden="true"></i> 12</p>
@@ -687,7 +694,7 @@
 						<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -695,7 +702,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -703,7 +710,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -711,7 +718,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -719,7 +726,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -727,7 +734,7 @@
 					<div class=" justify-content-between news-left-item  pt-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -735,7 +742,7 @@
 					<div class="justify-content-between news-left-item pt-0 border-0">
 						<a href="" class="news-left-image "><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -759,7 +766,7 @@
 					<div class=" justify-content-between news-left-item  pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p>Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -767,7 +774,7 @@
 					<div class=" justify-content-between news-left-item  pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -775,7 +782,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -783,7 +790,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -791,7 +798,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -799,7 +806,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -807,7 +814,7 @@
 					<div class=" justify-content-between news-left-item pt-0 w-100">
 						<a href="" class="news-left-image d-block"><img src="images/Rectangle 62.png" alt=""></a>
 						<div class="news-left-item-info ">
-							<a href="" class="news-left-item-title"><h4>Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</h4></a><br>
+							<h4 class="news-left-item-title"><a href="" >Bộ trưởng Nội vụ: 'Rất ít nơi đăng ký thi tuyển lãnh đạo'</a></h4>
 							<a href="" class=" news-left-item-time">Thời sự <img src="images/icon/Ellipse.png" alt=""> <span class="alert-light">Hôm này, 20/10/2019, 16:08</span> </a> 
 							<p class="news-left-item-content">Bộ Nội vụ yêu cầu các bộ ngành, địa phương đăng ký thi tuyển lãnh đạo cấp vụ, cấp phòng song "rất ít nơi" hưởng ứng.</p>
 						</div>
@@ -831,7 +838,7 @@
 			<div class="col-md-4 col-sm-6">
 			  <div class="category-box category-box-main">
 								<div class="category-header">
-									<a href="" class="cate-title">Tin theo ngành hàng</a>
+									<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 								</div>
 				<div class="category-box-main-content">
 									<div class="category-box-main-item-big">
@@ -879,7 +886,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="category-box category-box-main">
 								<div class="category-header">
-									<a href="" class="cate-title">Tin theo ngành hàng</a>
+									<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 								</div>
 								<div class="category-box-main-content">
 									<div class="category-box-main-item-big">
@@ -927,7 +934,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="category-box category-box-main">
 								<div class="category-header">
-									<a href="" class="cate-title">Tin theo ngành hàng</a>
+									<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 								</div>
 								<div class="category-box-main-content">
 									<div class="category-box-main-item-big">
@@ -975,7 +982,7 @@
 						<div class="col-md-4 col-sm-6">
 			  				<div class="category-box category-box-main">
 								<div class="category-header">
-									<a href="" class="cate-title">Tin theo ngành hàng</a>
+									<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 								</div>
 								<div class="category-box-main-content">
 									<div class="category-box-main-item-big">
@@ -1023,7 +1030,7 @@
 						<div class="col-md-4 col-sm-6">
 			  				<div class="category-box category-box-main">
 								<div class="category-header">
-									<a href="" class="cate-title">Tin theo ngành hàng</a>
+									<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 								</div>
 								<div class="category-box-main-content">
 									<div class="category-box-main-item-big">
@@ -1071,7 +1078,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="category-box category-box-main">
 								<div class="category-header">
-									<a href="" class="cate-title">Tin theo ngành hàng</a>
+									<h3 class="cate-title"><a href="" >Tin theo ngành hàng</a></h3>
 								</div>
 								<div class="category-box-main-content">
 									<div class="category-box-main-item-big">
@@ -1204,10 +1211,12 @@
 				<img src="images/image 58.png" alt="">
 			</div>
 		</div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/back-to-top.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 	<script> scr="js/hc-offcanvas-nav.js"</script>
 	<script>
@@ -1234,5 +1243,24 @@
 		  insertClose: false,
 		});
 	  </script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 </html>
