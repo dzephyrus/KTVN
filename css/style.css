@@ -771,13 +771,23 @@ box-sizing: border-box;
 .box-page-first>.box-page-second{
 	padding-top: 0px;
 }
+.cate-page{
+	display: flex;
+}
+.cate-page li{
+	margin-right: 5px;
+}
+.cate-page .active a{
+	background: #993333;
+	color: white;
+}
 .cate-number{
 	width: 32px;
 	height: 32px;
 	display: inline-block;
 	border: 1px solid #BDBDBD;
-box-sizing: border-box;
-border-radius: 2px;
+	box-sizing: border-box;
+	border-radius: 2px;
 	line-height: 32px;
 	text-align: center;
 	color: black;
