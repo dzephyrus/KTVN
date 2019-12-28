@@ -290,6 +290,8 @@ strong{
 	right: 0px;
 	background-color: white;
 	padding: 3px;
+
+   	visibility: hidden;
 }
 .search-bar input{
 	border-radius: 15px;
