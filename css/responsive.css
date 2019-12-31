@@ -19,11 +19,11 @@
 	.bottom-header{
 		background:#A71E23;
 	}
-	.main-menu{
+	.bottom-header .main-menu{
 		width: 100%!important;
-		display: flex;
 		justify-content: space-between;
 		position: relative;
+		background-color: #A71E23;
 	}
 	.nav-r{
 		position: absolute;
@@ -54,10 +54,13 @@
 		display: block;
 	}
 	.bottom-header .menu-action{
-	display: flex;
+	display: inline-block;
 	position: relative;
 	bottom: 14px;
 	right: 0px;
+	}
+	.menu-search .menu-search_btn i{
+	display: block;
 	}
 	
 	.home-logo{
