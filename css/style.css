@@ -574,7 +574,7 @@ line-height: 140%;
 color: #444444;
 }
 .news-left-item-title{
-	font-family: roboto-regular;
+	font-family: roboto-bold;
 font-style: normal;
 font-weight: 750;
 font-size: 20px;
@@ -633,6 +633,12 @@ letter-spacing: 0.02em;
 }
 .box-home-left-item .news-info{
 	width: 170px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	line-height: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 /*box-home-main*/
 .box-home-main{
@@ -646,6 +652,14 @@ letter-spacing: 0.02em;
 }
 .box-home-main .news-info .main-title{
 	margin-bottom: 20px;
+}
+.box-home-main .news-info p{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 /*box-home-right*/
 .main-news-right{
@@ -2119,7 +2133,7 @@ span.nav-icon-right{
 .author-carousel .owl-nav, .author-carousel .owl-dots{
 	height: 0;
 }
-#button {
+#button1 {
   display: inline-block;
   background-color: #FF9800;
   width: 50px;
@@ -2135,7 +2149,7 @@ span.nav-icon-right{
   visibility: hidden;
   z-index: 1000;
 }
-#button::after {
+#button1::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
@@ -2144,14 +2158,14 @@ span.nav-icon-right{
   line-height: 50px;
   color: #fff;
 }
-#button:hover {
+#button1:hover {
   cursor: pointer;
   background-color: #333;
 }
-#button:active {
+#button1:active {
   background-color: #555;
 }
-#button.show {
+#button1.show {
   opacity: 1;
   visibility: visible;
 }

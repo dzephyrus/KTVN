@@ -182,9 +182,10 @@
 
 					<div class="detail-body-left">
 						<div class="detail-content">
-							<h2 class="main-title main-title-super detail-title">
-								<a href="#" title="">Thủ tướng: Kiên quyết không nhân nhượng với các hành vi xâm phạm
-									chủ quyền</a>
+
+							<h2 class="main-title main-title-super detail-title text-left">
+								<a href="#" title="">Thủ tướng: Kiên quyết không nhân nhượng với các hành vi xâm phạm chủ quyền</a>
+
 							</h2>
 							<p class="main-intro detail-intro">"Dĩ bất biến, ứng vạn biến" bảo đảm môi trường phát triển
 								hòa bình, nhưng kiên quyết không nhân nhượng với các hành vi xâm phạm chủ quyền, quyền
@@ -625,6 +626,7 @@
 			</div>
 		</div>
 	</footer>
+	<a id="button1"></a>
 	<!--------------------------------responsive footer------------------------------------------------>
 	<div class="footer-r d-flex flex-column">
 		<div class="footer-r_top d-flex ">
@@ -709,42 +711,25 @@
 	<script src="js/main.js"></script>
 	<script src="js/hc-offcanvas-nav.js" type="text/javascript"></script>
 
-	<div id="interestedModal" class="modal fade modal-support" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">×</button>
-					<h4 class="modal-title">Nhận thông báo khi bài viết có sự thay đổi</h4>
-				</div>
-				<div class="modal-body">
-					<form action="" method="POST" id="#support-form">
-						<input type="hidden" name="new_id" value="253164" id="news_id">
-						<input type="hidden" name="category_id" value="15" id="category_id">
-						<div class="form-group">
-							<input type="email" name="email" id="email-interested" class="form-control "
-								placeholder="Email">
-						</div>
-						<div class="form-group">
-							<div style="display: inline-block;">
-								<input class="jsch form-control" type="text" id="mail-capt-interested" name="norobot"
-									value="" placeholder="Mã captcha"
-									style="float: left; margin-right: 8px; width: 233px;">
-								<img class="img-captcha" src="/captcha/captcha.php" style="width: 100px;">
-							</div>
-						</div>
-						<div class="form-group form-action">
-							<input type="button" name="error_notification" id="btn-submit-interested"
-								class="btn-submit btn btn-outline-secondary btn-default" value="Gửi">
-							<button type="button" class="btn btn-outline-secondary btn-default" data-dismiss="modal"
-								id="close-interested">Đóng</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script>
+
+	<script type="text/javascript">
+		var btn = $('#button1');
+
+		$(window).scroll(function() {
+		  if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		  } else {
+			btn.removeClass('show');
+		  }
+		});
+
+		btn.on('click', function(e) {
+		  e.preventDefault();
+		  $('html, body').animate({scrollTop:0}, '300');
+		});
+	</script>
+<script>
+
 		console.log($(window).scrollTop());
 		$(window).scroll(function () {
 			console.log($(window).scrollTop());
@@ -755,12 +740,14 @@
 				$('.floating-bar').show();
 			}
 		});
+
 	</script>
-	<script>
-		$('#openMenu').click(function () {
-			if ($('.dropdown-menu').hasClass('show')) {
-				$('#closeMenu').css('display', 'none');
-				$('.open-menu-icon').css('display', 'flex');
+<script>
+		$('#openMenu').click(function(){
+			if($('.dropdown-menu').hasClass('show')){
+				$('#closeMenu').css('display','none');
+				$('.open-menu-icon').css('display','flex');
+
 			}
 			else {
 				$('#closeMenu').css('display', 'block');
