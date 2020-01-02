@@ -667,7 +667,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Giúp nongnghiep.vn sửa lỗi !</h4>
+					<h4 class="modal-title text-center">Giúp báo lỗi thông tin bài viết !</h4>
 				</div>
 				<div class="modal-body">
 					<form action="" method="POST" id="#support-form">
@@ -675,28 +675,31 @@
 						<input type="hidden" name="category_id" value="<?=$oneNews['category_id']?>" id="category_id">
 						<div class="form-group">
 							<textarea name="content" id="content" class="form-control" rows="4"
-								placeholder="Vui lòng nhập vào đây cho chúng tôi biết nội dung lỗi là gì? Xin cảm ơn!"
+								placeholder="Vui lòng nhập nội dung lỗi vào đây. Xin cảm ơn!"
 								onfocus="this.placeholder = ''"
-								onblur="this.placeholder = 'Vui lòng nhập vào đây cho chúng tôi biết nội dung lỗi là gì? Xin cảm ơn!'"></textarea>
+								onblur="this.placeholder = 'Vui lòng nhập nội dung lỗi vào đây. Xin cảm ơn!'"></textarea>
 						</div>
-						<div class="form-row">
+						<div class="form-row border-bottom mb-3">
 							<div class="form-group col-sm-6 col-md-6 user-info">
 								<input type="email" name="email" id="email" class="form-control " placeholder="Email">
 							</div>
 							<div class="form-group col-sm-6 col-md-6 user-info">
-								<input type="text" name="phone" id="phone" class="form-control"
+								<input type="number" name="phone" id="phone" class="form-control"
 									placeholder="Số điện thoại">
 							</div>
-							<div style="display: inline-block;">
-								<input class="jsch form-control" type="text" id="mail-capt" name="norobot" value=""
+							<div class="form-group col-sm-6 col-md-6">
+								<input class=" form-control" type="text" id="mail-capt" name="norobot" value=""
 									placeholder="Mã captcha" />
-								<img class="img-captcha" src="/captcha/captcha.php" style="width: 100px;" />
 							</div>
+							<div class="form-group col-sm-6 col-md-6 ">
+								<img class="img-captcha" src="../captcha/captcha.php" style="width: 100px;" />
+							</div>
+								
 							<!-- <span class="modal-warning">*Vui lòng nhập đủ thông tin email hoặc số điện thoại</span> -->
 						</div>
-						<div class="form-group form-action">
+						<div class="form-group form-action " >
 							<input type="button" name="error_notification" id="btn-submit-report"
-								class="btn-submit btn btn-outline-secondary btn-default" value="Gửi báo lỗi">
+								class="btn-submit btn btn-outline-secondary btn-success" value="Gửi báo lỗi">
 							<button type="button" class="btn btn-outline-secondary btn-default" data-dismiss="modal"
 								id="close-report">Đóng</button>
 						</div>
