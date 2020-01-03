@@ -377,27 +377,7 @@ color: #333333;
 	.side_cate{
 		display: none;
 	}
-	.box-home-lk .box-home-main-item{
-		display:block;
-		
-	}
-	.news-home-item-lk .box-author{
-		display: none;
-	}
-	.list-news-home .news-home-item:first-child{
-		margin-bottom: 35px;
-	}
-	.box-home-lk .box-home-main-item .thumb{
-		width: 100%;
-		height: auto;
-	}
-	.box-home-lk .box-home-main-item .news-info{
-		width: 100%;
-		margin-right: 0px;
-	}
-	.box-home-lk .box-home-main-item .box-author{
-		display: none;
-	}
+	
 	.box-home-main .news-info .main-title{
 		line-height: 28px;
 		margin-bottom: 10px;
@@ -437,8 +417,8 @@ color: #333333;
 	.category-box-main-item .news-info{
 		width: 65%;
 	}
-	.category-box-main-item .news-info .main-title .main-title-small{
-		font-size: 20px !important;
+	.category-box-main-item .news-info .main-title-small{
+		font-size: 18px !important;
 		line-height: 26px;
 	}
 	.category-box-main{
@@ -701,12 +681,7 @@ color: #333333;
 	.footer-info-office-right{
 		text-align: center;
 	}
-	.lk-home-box-item .thumb{
-		width: 35%;
-	}
-	.lk-home-box .bx-wrapper{
-		width: 100%;
-	}
+	
 
 	/* category */
 	.box-home-cate .box-home-right{
@@ -846,7 +821,6 @@ color: #333333;
 		transform: translate(-100%);
 		z-index: 5;
 	}
-	
 	.search-box input[type="text"] + span {
 	  z-index: -1;
 	  position: absolute;
@@ -868,6 +842,10 @@ color: #333333;
 	  border-radius: 5px;
 	  background: white;
 	  transform: rotate(45deg) translate(21px, -1px);
+	}
+	.box-page-bottom_item{
+		width: 100%;
+		
 	}
 	.footer{
 		display: none!important;
@@ -970,6 +948,7 @@ color: #333333;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 }
 
 #sidebar.active {
@@ -1470,18 +1449,7 @@ color: #993333;
 		width: 48%;
 		margin-right: 5px;
 	}
-	/* langkinh */
-	.detai-body-lk .detail-content .main-title{
-		padding: 0px;
-	}
-	.detai-body-lk .detail-content .main-intro{
-		padding: 0px;
-	}
-	.detail-body-lk-bot .detail-body-left{
-		margin-right: 10px;
-		width: 75%;
-	}
-	/* author  */
+	
 	.box-home-author .box-home-main-item{
 		padding:0px;
 	}
@@ -1518,6 +1486,10 @@ color: #993333;
 	.icon-nav i{
 		font-size: 30px;
 	}
+	.box-page-bottom_item{
+		width: 48.4%;
+		padding-bottom: 0px;
+	}
 	.main-footer{
 		padding: 15px 15px;
 	}
@@ -1543,6 +1515,7 @@ color: #993333;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 }
 
 #sidebar.active {
