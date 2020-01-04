@@ -420,11 +420,13 @@ color: #333333;
 	
 }
 .menu-cate-1 .menu-cate-1_drop .drop-item{
-	color: #A71F23;
-	display: block;
-	line-height: 17px;
-	padding: 5px 15px;
-	min-width: 130px;
+	    font-weight: 700;
+    font-size: 12px;
+    color: #A71F23;
+    display: block;
+    line-height: 17px;
+    padding: 5px 15px;
+    min-width: 186px;
 	
 }
 .menu-cate-1:hover .menu-cate-1_drop{
