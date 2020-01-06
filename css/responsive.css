@@ -1080,6 +1080,8 @@ a.article:hover {
     NAV-RES
 ----------------------------------------------------- */
 	.nav-res{
+		display: flex;
+		justify-content: space-between;
 		background-color: #F0EFF4;
 		padding: 10px;
 	}
