@@ -1101,6 +1101,20 @@ a.article:hover {
 	/* ---------------------------------------------------
     END NAV-RES
 ----------------------------------------------------- */
+	.chungkhoan{
+		display: block;
+		background: #FFEEDB;
+	}
+	.ck_item{
+		padding: 10px 15px 10px 10px;
+		width: 50%;
+	}
+	.ck_item i{
+		align-items: center;
+		padding: 20px 10px;
+		color: #27AE60;
+	}
+	
 }
 @media (min-width: 768px) and (max-width: 1200px) {
 	/* header */
