@@ -1,4 +1,4 @@
-a, a:hover, a:visited, a:link, a:active
+﻿a, a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
 }
@@ -1336,6 +1336,7 @@ color: #EEEEEE;
 	right: 10px;
 	width: 10px;
 	height: 10px;
+	color: white;
 }
 .list-video{
 	width: 1140px;
@@ -2130,3 +2131,13 @@ span.nav-icon-right{
 	border-radius: 3px;
 }
 /* copy link */
+.loading-process {
+    transform: translateX(-50%);
+    left: 50%;
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    top: 40%;
+    display: none;
+}
