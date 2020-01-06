@@ -56,7 +56,7 @@
 	.bottom-header .menu-action{
 	display: inline-block;
 	position: relative;
-	bottom: 14px;
+	bottom: 0px;
 	right: 0px;
 	}
 	.menu-search .menu-search_btn i{
@@ -121,7 +121,7 @@
 	
 	.content-page{
 		width:100%;
-		margin-top: -15px;
+		margin-top: -45px;
 		margin-bottom: 0px;
 	}
 	.footer-menu-cate{
@@ -205,6 +205,7 @@
 	}
 	
 	/* box -home */
+	
 	.box-home{
 		display: block;
 		padding-bottom: 0;
@@ -1104,6 +1105,7 @@ a.article:hover {
 	.chungkhoan{
 		display: block;
 		background: #FFEEDB;
+		margin-bottom: 20px;
 	}
 	.ck_item{
 		padding: 10px 15px 10px 10px;
