@@ -1257,6 +1257,9 @@ a.article:hover {
 	.ts-home-box{
 		padding:0px;
 	}
+	.category-box-main{
+		margin-bottom: 30px;
+	}
 	.category-box-main-list-news{
 		position: relative;
 	}
