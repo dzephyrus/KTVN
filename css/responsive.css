@@ -56,7 +56,7 @@
 	.bottom-header .menu-action{
 	display: inline-block;
 	position: relative;
-	bottom: 14px;
+	bottom: 0px;
 	right: 0px;
 	}
 	.menu-search .menu-search_btn i{
@@ -121,7 +121,7 @@
 	
 	.content-page{
 		width:100%;
-		margin-top: -15px;
+		margin-top: -45px;
 		margin-bottom: 0px;
 	}
 	.footer-menu-cate{
@@ -205,6 +205,7 @@
 	}
 	
 	/* box -home */
+	
 	.box-home{
 		display: block;
 		padding-bottom: 0;
@@ -377,27 +378,7 @@ color: #333333;
 	.side_cate{
 		display: none;
 	}
-	.box-home-lk .box-home-main-item{
-		display:block;
-		
-	}
-	.news-home-item-lk .box-author{
-		display: none;
-	}
-	.list-news-home .news-home-item:first-child{
-		margin-bottom: 35px;
-	}
-	.box-home-lk .box-home-main-item .thumb{
-		width: 100%;
-		height: auto;
-	}
-	.box-home-lk .box-home-main-item .news-info{
-		width: 100%;
-		margin-right: 0px;
-	}
-	.box-home-lk .box-home-main-item .box-author{
-		display: none;
-	}
+	
 	.box-home-main .news-info .main-title{
 		line-height: 28px;
 		margin-bottom: 10px;
@@ -437,8 +418,8 @@ color: #333333;
 	.category-box-main-item .news-info{
 		width: 65%;
 	}
-	.category-box-main-item .news-info .main-title .main-title-small{
-		font-size: 20px !important;
+	.category-box-main-item .news-info .main-title-small{
+		font-size: 18px !important;
 		line-height: 26px;
 	}
 	.category-box-main{
@@ -572,16 +553,16 @@ color: #333333;
 	}
 	.relation-news-header{
 		margin-bottom: 16px;
-		background: #F7F7F7;
-		width: 93%;
+		background:#E3E3E3;
+		width: 100%;
 		margin: 0 auto;
+		padding: 15px;
 	}
 	.relation-news-header h4{
 		padding: 15px 0;
 	}
 	.relation-news-list{
-		width: 90%;
-		padding-left: 20px;
+		width: 95%;
 	}
 	.main-title-super{
 		font-size: 30px;
@@ -701,12 +682,7 @@ color: #333333;
 	.footer-info-office-right{
 		text-align: center;
 	}
-	.lk-home-box-item .thumb{
-		width: 35%;
-	}
-	.lk-home-box .bx-wrapper{
-		width: 100%;
-	}
+	
 
 	/* category */
 	.box-home-cate .box-home-right{
@@ -846,7 +822,6 @@ color: #333333;
 		transform: translate(-100%);
 		z-index: 5;
 	}
-	
 	.search-box input[type="text"] + span {
 	  z-index: -1;
 	  position: absolute;
@@ -868,6 +843,10 @@ color: #333333;
 	  border-radius: 5px;
 	  background: white;
 	  transform: rotate(45deg) translate(21px, -1px);
+	}
+	.box-page-bottom_item{
+		width: 100%;
+		
 	}
 	.footer{
 		display: none!important;
@@ -970,6 +949,7 @@ color: #333333;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 }
 
 #sidebar.active {
@@ -1097,6 +1077,45 @@ a.article:hover {
     top: 0;
     right: 0;
 }
+	/* ---------------------------------------------------
+    NAV-RES
+----------------------------------------------------- */
+	.nav-res{
+		display: flex;
+		justify-content: space-between;
+		background-color: #F0EFF4;
+		padding: 10px;
+	}
+	.nav-res_item p{
+		text-align: center;
+	}
+	.nav-res_item_name{
+		font-family: Averta;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 18px;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+		color: #555555;
+	}
+	/* ---------------------------------------------------
+    END NAV-RES
+----------------------------------------------------- */
+	.chungkhoan{
+		display: block;
+		background: #FFEEDB;
+		margin-bottom: 20px;
+	}
+	.ck_item{
+		padding: 10px 15px 10px 10px;
+		width: 50%;
+	}
+	.ck_item i{
+		align-items: center;
+		padding: 20px 10px;
+		color: #27AE60;
+	}
 	
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1255,6 +1274,9 @@ a.article:hover {
 	}
 	.ts-home-box{
 		padding:0px;
+	}
+	.category-box-main{
+		margin-bottom: 30px;
 	}
 	.category-box-main-list-news{
 		position: relative;
@@ -1448,18 +1470,7 @@ color: #993333;
 		width: 48%;
 		margin-right: 5px;
 	}
-	/* langkinh */
-	.detai-body-lk .detail-content .main-title{
-		padding: 0px;
-	}
-	.detai-body-lk .detail-content .main-intro{
-		padding: 0px;
-	}
-	.detail-body-lk-bot .detail-body-left{
-		margin-right: 10px;
-		width: 75%;
-	}
-	/* author  */
+	
 	.box-home-author .box-home-main-item{
 		padding:0px;
 	}
@@ -1496,6 +1507,10 @@ color: #993333;
 	.icon-nav i{
 		font-size: 30px;
 	}
+	.box-page-bottom_item{
+		width: 48.4%;
+		padding-bottom: 0px;
+	}
 	.main-footer{
 		padding: 15px 15px;
 	}
@@ -1521,6 +1536,7 @@ color: #993333;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 }
 
 #sidebar.active {
