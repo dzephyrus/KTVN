@@ -1017,8 +1017,8 @@ color: #333333;
 	color: white;
 }
 #sidebar ul li a:hover {
-    color: #993333;
-    background: #fff;
+    color: white;
+    
 }
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
