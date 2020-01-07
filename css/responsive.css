@@ -955,7 +955,11 @@ color: #333333;
 #sidebar.active {
     left: 0;
 }
-
+#sidebar button{
+		background-color:#993333;
+		color: white;
+		text-transform: uppercase;
+	}
 #dismiss {
     width: 35px;
     height: 35px;
