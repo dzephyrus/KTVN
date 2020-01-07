@@ -1015,6 +1015,7 @@ color: #333333;
     display: block;
 	background-color:#993333;
 	color: white;
+	padding-right: 80px;
 }
 #sidebar ul li a:hover {
     color: white;
